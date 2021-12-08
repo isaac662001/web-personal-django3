@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/abou-bg.jpg' %}{% endblock %}
+
+    {% block headers %}
+       <h1>Acerca de</h1>
+       <span class="subheading">Biografía</span> 
+{% endblock %}
+
+
+{% block content %}
+            <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avata" src="{% static 'core/img/avata.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Isaac Moreira</h2>   
+          <p>Nacido en rocafuerte un 6 de junio del 2001 a la edad de los 9 años me apasione por los videojuegos eso fue un gran detonante para mi pasion por las tegnologias y uno de los motivos por los cuales estudio esta carrera academica ...</p>
+        </div>
+      </div>  
+    </div>
+
+    {% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portafolio{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/portfoli-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Portafolio</h1>
+    <span class="subheading">Proyectos Hechos</span>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Proyecto -->
+    <div class="row project">  	
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/abou-bg.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading title">Primer Proyecto</h2>   
+        <p>Mi primer proyecto fue hacer una plataforma html la cual fue subida en github</p>
+        <p><a href="https://github.com/isaac662001/proyecto">Más información</a></p>
+    </div>
+    </div>
+    <!-- Proyecto -->
+    <div class="row project">  	
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/hom-bg.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading title">segundo Proyecto</h2>   
+        <p>Mi segundo proyecto es esta misma pagina web la cual se programo en base templates y el cual creo que es muy llamativo</p>
+        <p><a href="https://github.com/isaac662001?tab=repositories">Más información</a></p>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}
